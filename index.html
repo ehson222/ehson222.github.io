@@ -1,6 +1,20 @@
+<!DOCTYPE html>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
+    <!-- for page language -->
+    <meta charset="UTF-8">
+    <!-- for google search engine -->
+    <meta name="description" content="portfolio">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="author" content="ehson assani">
+    <!-- for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">                                      
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
   <title></title>
@@ -17,8 +31,120 @@
     span.s5 {font-kerning: none; background-color: #ffffff}
   </style>
 </head>
+<body>        
+ <div class="containerOuter">
+        <div class="row">
+            <div id="containerAll">
+                <!-- menu -->
+                <div class="menu">                        
+                    <div class="leftLabels text-xs-center">
+                        <h1 class="nameMain">Hi, I'm ehson</h1>
+                        <h5 id="">Queens College Student</h5>
+                    </div>
+                    <nav class="navMain">
+                        <ul id="contentMain">
+                            <li class="navItem">
+                                <a href="#SQL" class="navLink">SQL</a>
+                            </li>
+                            <li class="navItem">
+                                <a href="#Projects" class="navLink">Projects</a>
+                            </li>
+                            <li class="navItem">
+                                <a href="#About" class="navLink">About</a>
+                            </li>
+                        </ul>
+                    </nav>                                         
+                </div>
+                <!-- content -->
+                <div class="content">
+                    <div class="sectionDiv">
+                        <!-- SQL/joke -->
+                        <section id="SQL" class="section">
+                            <header>
+                                <h2 class="Heading oneTwoMargin" id="jokeHead"><em>Databases</em></h2>
+                            </header>
+                            <p id="jokeMain">select ComputerScience.Major from QueensCollege QC 
+                            <br>where QC.degree = 'no time to hangout'<br> and degree not in<br> 
+                            (select l.students from student l<br> where reason = 'no time to study');
+                            </p>
+                        </section>
+                        <!-- Projects -->
+                        <section id="Projects" class="section">
+                            <div class="inside oneTwoMargin"> 
+                                <h1 class= "Heading sectionTitle">My Work</h1>
+                                <p>You can contact me at <a href="mailto:ehsontp@gmail.com" class="social-icons"><i class="fa fa-envelope"></i> ehsontp@gmail.com</a> 
+
+                                </p>
+                                <p> Link to my
+                                <a href="ea222.pdf">Resume</a> 
+                            </p>
+
+                                <h2 class= "Heading sampleWork">Mock Pastry Shop (HTML,CSS,BootStrap,JQuery)</h2>
+                                <p><a href="assets/img/vinasample1.PNG" data-lightbox="photoGallery0">
+                                    <img class="img-thumbnail images" src="assets/img/vinasample1.PNG" 
+                                    style="width:170px;height:170px;margin-left:15px;">
+                                   </a>
+                                    <a href="assets/img/vinasample2.PNG" data-lightbox="photoGallery0"></a>
+                                    <a href="assets/img/first1.PNG" data-lightbox="photoGallery0"></a>
+                                    Instructor Muhammad Raza covered a range of Front-end and Back-end topics in way that non-CS (computer science) majors can understand.    Taken from the experience I gathered attending a weekly workshop.  I tried to build a "real" look-alike store page for a local shop,<a href="Vina'sBakery/Vina'sBakery.html">Vina's Bakery</a> (try resizing your windows). It's a far cry from my first <a href="firstSite\first.html">web page.</a> 
+                                </p>
+                                <hr>
+                                <h2 class= "Heading sampleWork">Data Structures Project (CS 313, Java)</h2>
+                                <p><a href="assets/img/JavaP0.png" data-lightbox="photoGallery1">
+                                    <img class="img-thumbnail images" src="assets/img/JavaP0.png" 
+                                    style="width:170px;height:170px;margin-left:15px;">
+                                   </a>
+                                    <a href="assets/img/JavaP3.png" data-lightbox="photoGallery1"></a>
+                                    <a href="assets/img/JavaP1.png" data-lightbox="photoGallery1"></a>
+                                    <a href="assets/img/JavaP2.png" data-lightbox="photoGallery1"></a>
+                                    <a href="assets/img/JavaP4.PNG" data-lightbox="photoGallery1"></a>
+                                    We were assigned to build 2 different data structures that accepted students by ID (<a href="https://github.com/ehson222/HashTableProject">Hash table project link</a>).  
+                                    Hash table was mandatory and the other was up to us (I choose maxHeap, did AVL on another project). As a bonus, I've Included my<a href=https://github.com/ehson222/StackAndQueue> previous project</a> from the same class. 
+                                </p>
+                                <hr>
+                                <h2 class= "Heading sampleWork">iOS Apps (Xcode, Swift)</h2>
+                                <p>
+                                    I really enjoyed this workshop, the instructor Kashfi Fahim made sure we had a great learning experience and stayed after class to clear up any questions.
+                                </p>
+                            </div>                     
+                        </section>  
+                        <!-- About -->
+                        <section id="About" class="section">
+                            <header><h2 class="Heading sectionTitle" id="Abt">About Me</h2></header>
+                            <div class="row aboutSection">
+                                <div class="col-lg-10">
+                                    <p id="aboutMe">From Long Island, NY. I like to learn, eat, and workout, though not necessarily in that order (eating would be #1). Lorem ips...
+                                    </p>                       
+                                    <hr noshade="" width="100%">  
+                                </div>
+                            </div>
+                        </section>
+                    </div>  
+                </div> 
+            </div>
+        </div>
+    </div>     
+    <footer id="myFooter">
+        <div class="footer-social">
+            <p class="footer-copyright">Copyright © 2018 ehson assani</p>
+            <a href="mailto:ehsontp@gmail.com" class="social-icons"><i class="fa fa-envelope"></i></a>
+            <a href="https://github.com/ehson222" class="social-icons"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ehson-assani-450a67155/" class="social-icons"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="social-icons"><i class="fa fa-weixin"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+    <script>
+    lightbox.option({
+      'fitImagesInViewport':false,
+      'resizeDuration': 200,
+      'fadeDuration': 0,
+      'imageFadeDuration': 0,
+      'wrapAround': true,
+    })
+    </script> 
 <body>
-<p class="p1"><span class="s1">&lt;</span><span class="s2">!DOCTYPE</span><span class="s3"> html</span><span class="s1">&gt;</span></p>
+<p class="p1"><span class="s1">&lt;</span><span class="s2">!DOCTYPE</span><span class="s3"> html</span><span class="s1">&gt;</span></p>
 <p class="p1"><span class="s1">&lt;</span><span class="s2">html</span><span class="s1">&gt;</span></p>
 <p class="p1"><span class="s1">&lt;</span><span class="s2">body</span><span class="s1">&gt;</span></p>
 <p class="p2"><span class="s2"></span><br></p>
